@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Photo</title>
+    <!-- Polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#" class="logo-nav">Pierre Nouvelot</a>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#apropos-contact">À propos & Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE D'ACCUEIL -->
+    <header class="hero" id="accueil">
+        <div class="hero-content">
+            <h1 class="hero-title">Pierre Nouvelot</h1>
+            <p class="hero-subtitle">Photographie Amateur</p>
+        </div>
+        <a href="#galerie" class="scroll-down">↓</a>
+    </header>
+
+    <!-- PAGE GALERIE (TUILES) -->
+    <section class="gallery-section" id="galerie">
+        <div class="section-header">
+            <h2>Galerie & Événements</h2>
+            <p>Découvrez mes sélections de shootings et reportages photo</p>
+        </div>
+
+        <div class="tiles-grid">
+            <!-- Tuile 1 -->
+            <div class="tile" onclick="ouvrirEvenement('Paysages Urbains')">
+                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80" alt="Paysages Urbains">
+                <div class="tile-overlay">
+                    <span class="tile-category">Urbain • 24 photos</span>
+                    <h3 class="tile-title">Nuit Parisienne</h3>
+                </div>
+            </div>
+
+            <!-- Tuile 2 -->
+            <div class="tile" onclick="ouvrirEvenement('Nature & Forêt')">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Nature">
+                <div class="tile-overlay">
+                    <span class="tile-category">Nature • 18 photos</span>
+                    <h3 class="tile-title">Échappée en Forêt</h3>
+                </div>
+            </div>
+
+            <!-- Tuile 3 -->
+            <div class="tile" onclick="ouvrirEvenement('Portrait Studio')">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Portrait">
+                <div class="tile-overlay">
+                    <span class="tile-category">Portrait • 12 photos</span>
+                    <h3 class="tile-title">Regards & Lumières</h3>
+                </div>
+            </div>
+
+            <!-- Tuile 4 -->
+            <div class="tile" onclick="ouvrirEvenement('Street Photography')">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&w=800&q=80" alt="Street Photo">
+                <div class="tile-overlay">
+                    <span class="tile-category">Street • 30 photos</span>
+                    <h3 class="tile-title">Instants de Rue</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS & CONTACT REGROUPÉE -->
+    <section class="about-contact-section" id="apropos-contact">
+        <div class="about-contact-container">
+            <div class="about-box">
+                <h2>À propos de moi</h2>
+                <p>Passionné par l'image et la captation des instants de vie, je pratique la photographie en amateur avec l'exigence d'un professionnel. J'aime jouer avec la lumière naturelle, les textures urbaines et les expressions authentiques.</p>
+            </div>
+            <div class="contact-box">
+                <h2>Me contacter</h2>
+                <p>Un projet de shooting, une question ou une collaboration ? N'hésite pas à m'écrire.</p>
+                <a href="mailto:ton.email@exemple.com" class="contact-btn">Envoyer un e-mail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Pierre Nouvelot - Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript externe -->
+    <script src="script.js"></script>
+</body>
+</html>
