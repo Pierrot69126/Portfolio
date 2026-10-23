@@ -13,7 +13,7 @@
 
     <!-- NAVIGATION -->
     <nav>
-        <a href="#" class="logo-nav">Pierre Nouvelot</a>
+        <a href="#" class="logo-nav">Jean Dupont</a>
         <ul>
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#galerie">Galerie</a></li>
@@ -24,7 +24,7 @@
     <!-- PAGE D'ACCUEIL -->
     <header class="hero" id="accueil">
         <div class="hero-content">
-            <h1 class="hero-title">Pierre Nouvelot</h1>
+            <h1 class="hero-title">Jean Dupont</h1>
             <p class="hero-subtitle">Photographie Amateur</p>
         </div>
         <a href="#galerie" class="scroll-down">↓</a>
@@ -38,12 +38,12 @@
         </div>
 
         <div class="tiles-grid">
-            <!-- Tuile 1 -->
-            <div class="tile" onclick="ouvrirEvenement('Paysages Urbains')">
-                <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=800&q=80" alt="Paysages Urbains">
+            <!-- Tuile 1 : GRÈCE (Remplacé ici) -->
+            <div class="tile" onclick="ouvrirEvenement('Grèce')">
+                <img src="Grèce/Grece-1.JPG" alt="Album Grèce">
                 <div class="tile-overlay">
-                    <span class="tile-category">Urbain • 24 photos</span>
-                    <h3 class="tile-title">Nuit Parisienne</h3>
+                    <span class="tile-category">Voyage • 36 photos</span>
+                    <h3 class="tile-title">Échappée Grecque</h3>
                 </div>
             </div>
 
@@ -76,7 +76,7 @@
         </div>
     </section>
 
-    <!-- SECTION À PROPOS & CONTACT REGROUPÉE -->
+    <!-- SECTION À PROPOS & CONTACT -->
     <section class="about-contact-section" id="apropos-contact">
         <div class="about-contact-container">
             <div class="about-box">
@@ -93,10 +93,31 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Pierre Nouvelot - Tous droits réservés.</p>
+        <p>&copy; 2026 Jean Dupont - Tous droits réservés.</p>
     </footer>
 
     <!-- Lien vers le fichier JavaScript externe -->
     <script src="script.js"></script>
-</body>
+
+
+<!-- HTML DE LA LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+    <!-- Bouton Croix avec action directe en HTML -->
+    <button type="button" id="lightbox-close" class="lightbox-close" onclick="fermerLightbox()">&times;</button>
+    
+    <button class="lightbox-prev" onclick="changerPhoto(-1)">&#10094;</button>
+    
+    <div class="lightbox-content">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Photo Grèce">
+        <div class="lightbox-counter" id="lightbox-counter">1 / 36</div>
+    </div>
+
+    <button class="lightbox-next" onclick="changerPhoto(1)">&#10095;</button>
+
+    <!-- Barre de miniatures en bas -->
+    <div class="lightbox-thumbnails" id="lightbox-thumbnails">
+        <!-- Les miniatures seront injectées automatiquement par le JavaScript -->
+    </div>
+</div>
+</div>
 </html>
